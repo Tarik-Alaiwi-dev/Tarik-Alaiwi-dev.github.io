@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Google Fonts Pre Connect -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <!-- Meta Tags -->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Fonts Links (Roboto 400, 500 and 700 included) -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
+
+  <!-- CSS Files Links -->
+  <link rel="stylesheet" href="./styles.css">
+
+  <link rel="icon" type="image/png" href="calc-img.png"/>
+
+  <!-- Title -->
+  <title>Calculator</title>
+  <script src="https://kit.fontawesome.com/77436d7389.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="conteiner">
+        <div class="content">
+            <div class="operations">
+                <p class="operations-p"></p>
+            </div>
+            <div class="quick-result">
+                <p class="quick-result-p"></p>
+            </div>
+            <div class="icons-wrapper">
+                <div class="icons">
+                    <button class="clock btn1">
+                        <i class="fa-regular fa-clock"></i>
+                    </button>
+                    <button class="ruler btn1">
+                        <i class="fa-solid fa-ruler-horizontal"></i>
+                    </button>
+                    <button onclick="sqrt();" class="sqrt btn1">
+                        <i class="fa-solid fa-square-root-variable"></i>
+                    </button>
+                    <button class="odstep btn1"></button>
+                    <button class="odstep btn1"></button>
+                    <button onclick="remove();" class="delete btn1">
+                        <i class="fa-solid fa-delete-left"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="btns">
+                <button onclick="clean();" class="clear btn2">C</button>
+                <button onclick="parentheses();" class="parentheses btn2 green">()</button>
+                <button onclick="percent();" class="percent btn2 green">%</button>
+                <button onclick="addOperation('/');" class="divide btn2 green">
+                    <i class="fa-solid fa-divide"></i>
+                </button>
+
+                <button onclick="addOperation(7);" class="7 btn2">7</button>
+                <button onclick="addOperation(8);" class="8 btn2">8</button>
+                <button onclick="addOperation(9);" class="9 btn2">9</button>
+                <button onclick="addOperation('*');" class="multiply btn2 green">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+
+                <button onclick="addOperation(4);" class="4 btn2">4</button>
+                <button onclick="addOperation(5);" class="5 btn2">5</button>
+                <button onclick="addOperation(6);" class="6 btn2">6</button>
+                <button onclick="addOperation('-');" class="minus btn2 green">
+                    <i class="fa-solid fa-minus"></i>
+                </button>
+
+                <button onclick="addOperation(1);" class="1 btn2">1</button>
+                <button onclick="addOperation(2);" class="2 btn2">2</button>
+                <button onclick="addOperation(3);" class="3 btn2">3</button>
+                <button onclick="addOperation('+');" class="plus btn2 green">
+                    <i class="fa-solid fa-plus"></i>
+                </button>
+
+                <button onclick="opposite();" class="opposite btn2">
+                    <i class="fa-solid fa-plus-minus"></i>
+                </button>
+                <button onclick="addOperation(0);" class="0 btn2">0</button>
+                <button onclick="dot();" class=", btn2">,</button>
+                <button onclick="result();" class="equals btn2">
+                    <i class="fa-solid fa-equals"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+  <noscript>Your browser don't support JavaScript!</noscript>
+  <script src="./scripts.js"></script>
+</body>
+</html>
