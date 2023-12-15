@@ -100,6 +100,7 @@ function compare(i){
                     console.log(buttonI);
                     buttonI.setAttribute("disabled", "");
                 }
+                return;
             }
         }else{
             //points--;
