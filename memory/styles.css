@@ -1,0 +1,131 @@
+body{
+    background: linear-gradient(135deg, #2596be, #145369, #041014);
+    width: 100%;
+    min-height: 100vh;
+}
+
+
+.conteiner{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+.result-div, .restart-div{
+    display: flex;
+    justify-content: center;
+}
+
+.btn-reset{
+    font-size: 50px;
+    border-radius: 10px;
+    padding: 10px 50px;
+    border: 1px solid #2596be;
+    background-color: #041014;
+    color: white;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    cursor: pointer;
+    transition: opacity 0.1s;
+    margin-top: 50px;
+    display: none;
+}
+
+.btn-reset-show{
+    display:block;
+}
+
+.btn-reset:hover{
+    opacity: 50%;
+}
+
+.btn-reset:active{
+    opacity: 100%;
+}
+
+span{
+    font-size: 50px;
+    color: white;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.content{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    width: 70%;
+}
+
+.card{
+    background-color: transparent;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    transition: opacity 0.1s;
+}
+
+
+.card:hover{
+    opacity: 50%;
+}
+
+.card:active{
+    opacity: 100%;
+}
+
+button{
+    border: none;
+    object-fit: cover;
+}
+
+.def-img{
+    position: absolute;
+}
+
+.def-img-peeked{
+    display: none;
+}
+
+
+.checked-card{
+    filter: grayscale(100%);
+}
+
+@media screen and (min-width: 1000px) and(max-width: 1400px){
+    .content{
+        width: 50%;
+    }
+}
+
+@media screen and (min-width: 1400px){
+    .content{
+        width: 30%;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .conteiner{
+        justify-content: center;
+        width: 55%;
+    }
+
+    .content{
+        width: 62%;
+    }
+    img{
+        width: 80px;
+    }
+    .card{
+        gap: 1px;
+    }
+    span{
+        font-size: 20px;
+    }
+    .btn-reset{
+        font-size: 30px;
+        margin-top: 50px;
+        margin-right: 15px;
+    }
+}
