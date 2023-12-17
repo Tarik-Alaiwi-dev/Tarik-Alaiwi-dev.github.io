@@ -67,17 +67,8 @@ function compare(i){
     document.querySelector(`.def-img-${i}`).classList.add('def-img-peeked');
     if(clicked.length===2){
         points--;
-        scoreText.innerHTML = `You have ${points} points left`;
-        if(points === 0){
-            scoreText.innerHTML = "Game Over";
-            mySound1.play();
-            document.querySelector('.btn-reset').classList.add('btn-reset-show');
-            for(let i=0; i<12; i++){
-                let buttonI = document.querySelector(`.card-${i}`);
-                console.log(buttonI);
-                buttonI.setAttribute("disabled", "");
-            }
-        }
+        scoreText.innerHTML = `You have ${points} chances left`;
+
         let first = clicked[0];
         let second = clicked[1];
         if(tabOfFree[first] === tabOfFree[second] && first!==second){
@@ -100,6 +91,7 @@ function compare(i){
                     console.log(buttonI);
                     buttonI.setAttribute("disabled", "");
                 }
+                return;
             }
         }else{
             //points--;
@@ -110,6 +102,16 @@ function compare(i){
               }, 500);
             clicked.pop();
             clicked.pop();
+        }
+        if(points === 0){
+            scoreText.innerHTML = "Game Over";
+            mySound1.play();
+            document.querySelector('.btn-reset').classList.add('btn-reset-show');
+            for(let i=0; i<12; i++){
+                let buttonI = document.querySelector(`.card-${i}`);
+                console.log(buttonI);
+                buttonI.setAttribute("disabled", "");
+            }
         }
     }
 }
@@ -137,7 +139,7 @@ function start(){
 
     points = 12;
 
-    scoreText.innerHTML = `You have ${points} points left`
+    scoreText.innerHTML = `You have ${points} chances left`
 
     tabOfFree = [];
 
