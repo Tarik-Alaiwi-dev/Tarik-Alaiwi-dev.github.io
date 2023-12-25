@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Google Fonts Pre Connect -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <!-- Meta Tags -->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Fonts Links (Roboto 400, 500 and 700 included) -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
+
+  <!-- CSS Files Links -->
+  <link rel="stylesheet" href="./styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Title -->
+  <title>Weather app</title>
+</head>
+<body>
+  <div class="content">
+    <div class="top">
+        <input id="input" type="text">
+        <button onclick="checkWeather();">
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+    </div>
+    <div class="image">
+        <img src="sun.webp" alt="sun">
+    </div>
+    <div class="temp">22&degC</div>
+    <div class="place">Kiezliny</div>
+        <div class="bottom">
+            <div class="left">
+                <i class="fa-solid fa-water"></i>
+                <div class="text">
+                    <span id="humidity">52%</span>
+                    <span>Humidity</span>
+                </div>
+            </div>
+            <div class="right">
+                <i class="fa-solid fa-wind"></i>
+                <div class="text">
+                    <span id="wind">5.66km/h</span>
+                    <span>Wind Speed</span>
+                </div>
+            </div>
+        </div>
+  </div>
+
+  <noscript>Your browser don't support JavaScript!</noscript>
+  <script src="./scripts.js"></script>
+</body>
+</html>

@@ -1,0 +1,176 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-color: rgb(80, 80, 80);
+    padding-top: 40px;
+}
+
+.temp, .place, .bottom, .image, .top, body, .left, .right{
+    display: flex;
+    justify-content: center;
+}
+
+.content{
+    background: rgb(126,255,212);
+    background: linear-gradient(90deg, rgba(126,255,212,1) 0%, rgba(126,255,243,1) 35%, rgba(0,194,255,1) 100%);
+    width: 80%;
+    padding: 30px;
+}
+
+input{
+    margin-right: 10px;
+    font-size: 30px;
+    padding: 10px;
+    background-color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 20px;
+}
+
+button{
+    padding: 25px;
+    font-size: 20px;
+    border: none;
+    border-radius: 50%;
+    background-color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+
+.image{
+    margin-top: 50px;
+}
+
+img{
+    width: 200px;
+}
+
+.temp{
+    margin-top: 10px;
+    font-size: 200px;
+}
+
+.place{
+    font-size: 50px;
+}
+
+.bottom{
+    margin-top: 100px;
+    justify-content: space-between;
+}
+
+span{
+    display: block;
+    font-size: 20px;
+}
+
+.left i, .right i{
+    font-size: 30px;
+    margin-right: 10px;
+}
+
+@media screen and (max-width: 650px){
+    .content{
+        width: 100%;
+    }
+
+    body{
+        padding-top: 0;
+    }
+}
+
+@media screen and (max-width: 500px){
+    input{
+        font-size: 20px;
+        padding: 10px;
+    }
+    
+    button{
+        padding: 18px;
+        font-size: 15px;
+    }
+    
+    .image{
+        margin-top: 50px;
+    }
+    
+    img{
+        width: 150px;
+    }
+    
+    .temp{
+        margin-top: 10px;
+        font-size: 100px;
+    }
+    
+    .place{
+        font-size: 40px;
+    }
+    
+    .bottom{
+        margin-top: 150px;
+        justify-content: space-between;
+    }
+    
+    span{
+        display: block;
+        font-size: 18px;
+    }
+    
+    .left i, .right i{
+        font-size: 25px;
+        margin-right: 10px;
+    }
+
+}
+
+@media screen and (max-width: 350px){
+    input{
+        margin-right: 10px;
+        font-size: 10px;
+        padding: 5px;
+    }
+    
+    button{
+        padding: 10px;
+        font-size: 8px;
+    }
+    
+    .image{
+        margin-top: 30px;
+    }
+    
+    img{
+        width: 80px;
+    }
+    
+    .temp{
+        margin-top: 10px;
+        font-size: 60px;
+    }
+    
+    .place{
+        font-size: 30px;
+    }
+    
+    .bottom{
+        margin-top: 80px;
+        justify-content: space-between;
+    }
+    
+    span{
+        display: block;
+        font-size: 10px;
+    }
+    
+    .left i, .right i{
+        font-size: 15px;
+    }
+
+    .left i{
+        margin-right: 10px;
+    }
+}
