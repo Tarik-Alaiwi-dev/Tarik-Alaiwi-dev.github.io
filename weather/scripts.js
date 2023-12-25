@@ -15,7 +15,7 @@ let humidity = 0;
 let wind = 0;
 
 async function checkCity(city) {
-    const response = await fetch(`http://api.openweathermap.org/geo/1.0/direct?q=${city}&limit=5&appid=${apiKey}`);
+    const response = await fetch(`https://api.openweathermap.org/geo/1.0/direct?q=${city}&limit=5&appid=${apiKey}`);
     const cityData = await response.json();
     console.log(cityData);
     lat = Number(cityData[0].lat);
