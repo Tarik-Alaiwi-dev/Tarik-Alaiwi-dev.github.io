@@ -6,7 +6,8 @@
 }
 
 body{
-    background-color: rgb(80, 80, 80);
+    background: rgb(126,255,212);
+    background: linear-gradient(90deg, rgba(126,255,212,1) 0%, rgba(126,255,243,1) 35%, rgba(0,194,255,1) 100%);
     padding-top: 40px;
 }
 
@@ -16,8 +17,6 @@ body{
 }
 
 .content{
-    background: rgb(126,255,212);
-    background: linear-gradient(90deg, rgba(126,255,212,1) 0%, rgba(126,255,243,1) 35%, rgba(0,194,255,1) 100%);
     width: 80%;
     padding: 30px;
 }
