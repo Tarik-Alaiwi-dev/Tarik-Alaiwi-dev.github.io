@@ -39,6 +39,15 @@ button{
     cursor: pointer;
 }
 
+.err{
+    color: red;
+    display: none;
+}
+
+.err-display{
+    display: block;
+}
+
 .image{
     margin-top: 50px;
 }

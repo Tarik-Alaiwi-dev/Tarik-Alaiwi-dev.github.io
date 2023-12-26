@@ -30,6 +30,14 @@ async function checkWeather(i) {
     }
     const response = await fetch(`https://api.openweathermap.org/data/2.5/weather?units=metric&q=${city}&appid=${apiKey}`);
     const cityWeather = await response.json();
+    //check if city in input is recognised in api
+    if(cityWeather.cod == 404){
+        document.querySelector(".err").classList.add("err-display");
+        inputElement.value = "";
+        return;
+    }
+    document.querySelector(".err").classList.remove("err-display");
+
     console.log(cityWeather);
     console.log(cityWeather.main.temp);
     console.log(cityWeather.main.humidity + "%");
@@ -63,3 +71,11 @@ async function checkWeather(i) {
 }
 
 checkWeather(0);
+
+function handleKeyDown(event){
+    if(event.key === "Enter" || event.keyCode ===13){
+        checkWeather(1);
+    }
+}
+
+document.addEventListener("keydown", handleKeyDown);
