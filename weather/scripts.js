@@ -5,11 +5,8 @@ let windValue = document.getElementById("wind");
 let cityName = document.querySelector(".place");
 let image = document.getElementById("image");
 
-let city = "London";
+let city = "Olsztyn";
 let apiKey = "8043277f2aa535f922c96a6256c67668";
-
-let lat = 0;
-let lon = 0;
 
 let temp = 0;
 let humidity = 0;
@@ -26,9 +23,11 @@ let clouds = 0;
 //     console.log(lon);
 // }
 
-async function checkWeather() {
-    inputElement = document.getElementById("input");
-    city = inputElement.value;
+async function checkWeather(i) {
+    if(i===1){
+        inputElement = document.getElementById("input");
+        city = inputElement.value;
+    }
     const response = await fetch(`https://api.openweathermap.org/data/2.5/weather?units=metric&q=${city}&appid=${apiKey}`);
     const cityWeather = await response.json();
     console.log(cityWeather);
@@ -63,9 +62,4 @@ async function checkWeather() {
     inputElement.value = "";
 }
 
-checkWeather();
-
-function clicked(){
-    inputElement = document.getElementById("input").value;
-    console.log(inputElement);
-}
+checkWeather(0);
