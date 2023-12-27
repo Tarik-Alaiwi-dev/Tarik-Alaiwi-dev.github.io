@@ -24,12 +24,14 @@
 <body>
   <div class="content">
     <div class="top">
-        <input id="input" type="text">
+        <div class="left">
+            <input id="input" type="text">
+            <div class="err">Invalid location</div>
+        </div>
         <button onclick="checkWeather(1);">
             <i class="fa-solid fa-magnifying-glass"></i>
         </button>
     </div>
-    <div class="err">Invalid location</div>
     <div class="image">
         <img id="image" src="./images/sun.webp" alt="sun">
     </div>

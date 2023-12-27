@@ -21,6 +21,11 @@ body{
     padding: 30px;
 }
 
+.top .left{
+    display: block;
+}
+
+
 input{
     margin-right: 10px;
     font-size: 30px;
@@ -31,16 +36,18 @@ input{
 }
 
 button{
-    padding: 25px;
     font-size: 20px;
     border: none;
     border-radius: 50%;
     background-color: rgb(255, 255, 255);
     cursor: pointer;
+    height: 56px;
+    width: 56px;
 }
 
 .err{
     color: red;
+    text-align: left;
     display: none;
 }
 
