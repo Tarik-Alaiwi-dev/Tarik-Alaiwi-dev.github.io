@@ -140,6 +140,10 @@ span{
         margin-right: 10px;
     }
 
+    .err{
+        font-size: 14px;
+    }
+
 }
 
 @media screen and (max-width: 350px){
@@ -188,5 +192,9 @@ span{
 
     .left i{
         margin-right: 10px;
+    }
+
+    .err{
+        font-size: 8px;
     }
 }

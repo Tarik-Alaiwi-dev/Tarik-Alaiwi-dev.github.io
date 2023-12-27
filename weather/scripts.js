@@ -42,7 +42,7 @@ async function checkWeather(i) {
     console.log(cityWeather.main.temp);
     console.log(cityWeather.main.humidity + "%");
     console.log(cityWeather.wind.speed + "km/h");
-    temp = cityWeather.main.temp.toFixed(1);
+    temp = Math.round(cityWeather.main.temp);
     humidity = cityWeather.main.humidity;
     wind = cityWeather.wind.speed;
     //check clouds and display proper image
@@ -64,7 +64,7 @@ async function checkWeather(i) {
     //assign city weather values
     city = city[0].toUpperCase() + city.toLowerCase().slice(1);
     cityName.innerHTML = city;
-    tempValue.innerHTML = temp + "&degC";
+    tempValue.innerHTML = temp + "&deg";
     humidityValue.innerHTML = humidity + "%";
     windValue.innerHTML = wind + "km/h";
     //clear input
