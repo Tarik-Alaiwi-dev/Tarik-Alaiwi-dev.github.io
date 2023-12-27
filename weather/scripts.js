@@ -62,6 +62,7 @@ async function checkWeather(i) {
         image.alt = "cloudy";
     }
     //assign city weather values
+    city = city[0].toUpperCase() + city.toLowerCase().slice(1);
     cityName.innerHTML = city;
     tempValue.innerHTML = temp + "&degC";
     humidityValue.innerHTML = humidity + "%";
