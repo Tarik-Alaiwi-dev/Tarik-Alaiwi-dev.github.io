@@ -25,7 +25,6 @@ body{
     display: block;
 }
 
-
 input{
     margin-right: 10px;
     font-size: 30px;
@@ -104,8 +103,9 @@ span{
     }
     
     button{
-        padding: 18px;
         font-size: 15px;
+        height: 45px;
+        width: 45px;
     }
     
     .image{
@@ -150,8 +150,9 @@ span{
     }
     
     button{
-        padding: 10px;
         font-size: 8px;
+        height: 22px;
+        width: 22px;
     }
     
     .image{
