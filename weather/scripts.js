@@ -4,6 +4,7 @@ let humidityValue = document.getElementById("humidity");
 let windValue = document.getElementById("wind");
 let cityName = document.querySelector(".place");
 let image = document.getElementById("image");
+let title = document.getElementById("title");
 
 let city = "Olsztyn";
 let apiKey = "8043277f2aa535f922c96a6256c67668";
@@ -12,6 +13,7 @@ let temp = 0;
 let humidity = 0;
 let wind = 0;
 let clouds = 0;
+let a = 0;
 
 // async function checkCity(city) {
 //     const response = await fetch(`https://api.openweathermap.org/geo/1.0/direct?q=${city}&limit=5&appid=${apiKey}`);
@@ -69,6 +71,7 @@ async function checkWeather(i) {
     windValue.innerHTML = wind + "km/h";
     //clear input
     inputElement.value = "";
+    title.innerHTML = `${temp}&deg Weather app`;
 }
 
 checkWeather(0);
