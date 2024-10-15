@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Google Fonts Pre Connect -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- Meta Tags -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Fonts Links (Roboto 400, 500 and 700 included) -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- CSS Files Links -->
+    <link rel="stylesheet" href="./styles.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Title -->
+    <title>Tarik Alaiwi - Portfolio Website</title>
+    <link rel="icon" href="resources/image.png" />
+  </head>
+
+    <a href="#" class="back-to-top hover-glow" id="backToTopButton">
+      <span>
+        <i class="fas fa-arrow-up text-black"></i>
+      </span>
+    </a>
+
+    <nav class="bg-gray-800 p-4">
+      <div class="container mx-auto flex justify-between items-center">
+        <div class="flex items-center">
+          <img id="logo" src="resources/image.png" alt="Logo" class="h-8 mr-2" />
+          <span class="text-white text-lg font-semibold">Tarik Alaiwi</span>
+        </div>
+        <div class="md:hidden">
+          <button
+            id="mobile-menu-button"
+            class="text-gray-300 hover:text-white focus:outline-none"
+            onclick="toggleMobileMenu()"
+          >
+            <svg viewBox="0 0 20 20" fill="currentColor" class="menu w-6 h-6">
+              <path
+                fill-rule="evenodd"
+                d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 5a1 1 0 110-2h12a1 1 0 110 2H4z"
+                clip-rule="evenodd"
+              ></path>
+            </svg>
+          </button>
+        </div>
+        <div class="hidden md:flex md:items-center md:justify-end" id="mobile-menu">
+          <a href="#" class="text-gray-300 hover:text-white hover-glow block px-4 py-2" onclick="scrollToSection(1); hideMenu();">About Me</a>
+          <a href="#" class="text-gray-300 hover:text-white hover-glow block px-4 py-2" onclick="scrollToSection(2); hideMenu();">Projects</a>
+          <a href="#" class="text-gray-300 hover:text-white hover-glow block px-4 py-2" onclick="scrollToSection(3); hideMenu();">Contact</a>
+        </div>
+      </div>
+    </nav>
+
+    <main></main>
+
+    <div class="conteiner section" id="section1">
+      <div class="main-1">
+        <div class="o-nas">ABOUT ME</div>
+        <div class="opis">
+          <p>I am a 3rd year Computer Science student from Poland passionate about programming. Outside of my academic
+            responsibilities, I am developing my skills in machine learning as an active member of the AI student research
+            club "Czarna Magia" and I have greatly improved as an full-stack web developer through a summer internship in
+            Rome.</p>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="projekty section" id="section2">
+      <div class="projekty-1">
+        <div class="o-nas">PROJECTS</div>
+        <div class="flexbox">
+          <div class="item">
+            <p>Solar Panel Detector</p>
+            <p style="font-weight: normal">
+              Klasyfikator chmury punktów wyszkolony na mapie UWM.
+            </p>
+            <a href="https://github.com/knsiczarnamagia" target="_blank"
+              ><div class="item-img">
+                <img
+                  src="resources/point-cloud-classificator.webp"
+                  alt=""
+                /></div
+            ></a>
+            <p style="font-weight: normal">
+              Realizowany we współpracy z
+              <a
+                href="https://visimind.com/pl/"
+                target="_blank"
+                style="font-weight: bold; text-decoration: underline"
+                >Visimind</a
+              >
+            </p>
+          </div>
+          <div class="item">
+            <p>Pneumonia Detection System</p>
+            <p style="font-weight: normal">Model wykrywający emocje</p>
+            <a
+              href="https://github.com/knsiczarnamagia/face-expression-recognizer"
+              target="_blank"
+              ><div class="item-img">
+                <img
+                  src="resources/face-expression-recognition.webp"
+                  alt=""
+                /></div
+            ></a>
+            <a
+              href="https://github.com/knsiczarnamagia/face-expression-recognizer"
+              target="_blank"
+              style="text-decoration: underline"
+              >REPO</a
+            >
+          </div>
+          <div class="item">
+            <p>Pomofocus Clone</p>
+            <p style="font-weight: normal">
+              Moduł wykrywania treści obraźliwych
+            </p>
+            <a
+              href="https://github.com/knsiczarnamagia/hate-detection"
+              target="_blank"
+              ><div class="item-img">
+                <img src="resources/hate-detection.webp" alt="" /></div
+            ></a>
+            <a
+              href="https://github.com/knsiczarnamagia/hate-detection"
+              target="_blank"
+              style="text-decoration: underline"
+              >REPO</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="kontakt section" id="section3">
+      <div class="kontakt-1">
+        <div class="o-nas">CONTACT</div>
+        <p>Let's connect! You can reach me here:</p>
+        <div class="sociale">
+          <a
+            href="https://www.facebook.com/profile.php?id=100093587573194"
+            target="_blank"
+            ><i class="fa-solid fa-at hover:text-white hover-glow"></i
+          ></a>
+          <a
+            href="https://www.linkedin.com/company/101266519/admin/feed/posts/"
+            target="_blank"
+          >
+            <i class="fa-brands fa-linkedin hover:text-white hover-glow" style="margin-right: 0"></i
+          ></a>
+        </div>
+      </div>
+    </div>
+
+
+</div>
+
+
+
+
+    <footer class="bg-gray-800 text-white py-4 text-center">
+      <!-- <a
+        href="https://uwm.edu.pl"
+        class="text-white hover:underline mx-2"
+        target="_blank"
+        >uwm.edu.pl</a
+      >
+      <a
+        href="https://www.facebook.com/uwmwmii"
+        class="text-white hover:underline mx-2"
+        target="_blank"
+        >facebook.com/uwmwmii</a
+      >
+      <a
+        href="http://wmii.uwm.edu.pl/studenci/kola-naukowe/kolo-naukowe-sztucznej-inteligencji-czarna-magia"
+        class="text-white hover:underline mx-2"
+        target="_blank"
+        >wmii.uwm.edu.pl/kolo-naukowe-sztucznej-inteligencji-czarna-magia</a
+      > -->
+    </footer>
+
+    <noscript>Your browser don't support JavaScript!</noscript>
+    <script src="./scripts.js"></script>
+  </body>
+</html>
