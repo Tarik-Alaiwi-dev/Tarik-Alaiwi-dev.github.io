@@ -5,6 +5,7 @@
 #logo{
   filter: brightness(0) invert(1);
 }
+/* change to icon? ^ */
 
 .hover-glow:hover {
   text-shadow: 0 0 8px white;
@@ -386,6 +387,13 @@ nav {
 
 
 .item {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.item-top{
   background-color: #efeeff;
   padding: 20px;
   border-radius: 5px;
@@ -393,6 +401,19 @@ nav {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 20px;
+}
+
+.logo{
+  border: 5px solid white;
+  width: 20px;
+  height: 20px;
+}
+
+.logos{
+  display: flex;
+  justify-content: space-around;
+  width: 400px;
 }
 
 .sociale {
@@ -726,7 +747,6 @@ nav {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: rgb(255, 255, 255);
   color: #1f2937;
   padding: 20px;
   border-radius: 20px;

@@ -49,6 +49,16 @@
         }
 
       }
+
+      function download(){
+        const link = document.createElement('a');
+        link.href = 'my_cv/TARIK_ALAIWI_CV.pdf';
+        link.download = 'TARIK_ALAIWI_CV.pdf';
+        link.style.display = 'none';
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+    }
       
 
     
