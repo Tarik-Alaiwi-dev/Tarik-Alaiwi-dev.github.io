@@ -22,8 +22,8 @@
         if(sectionNumber === 4){
             sectionTop = section.offsetTop - 100;
         }
-        if(screen.width < 1400 && sectionNumber === 2){
-            sectionTop = section.offsetTop - 100;
+        if(screen.width < 1700 && sectionNumber === 2){
+            sectionTop = section.offsetTop - 70;
         }
         
         window.scrollTo({
