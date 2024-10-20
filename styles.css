@@ -258,7 +258,7 @@
   right: 20px;
   width: 40px;
   height: 40px;
-  background-color: white;
+  background-color: rgb(243 244 246);
   border-radius: 50%;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
   display: none;
@@ -273,6 +273,7 @@
 
 .back-to-top:hover {
   box-shadow: 0 0 10px 3px white;
+  background-color: white;
 }
 
 
@@ -293,6 +294,7 @@ body {
   font-size: 50px;
   margin-bottom: 20px;
   font-weight: bold;
+  color: white;
 }
 
 .opis {
@@ -367,6 +369,10 @@ nav {
   justify-content: center;
 }
 
+.kontakt{
+  height: 98vh;
+}
+
 .agenda-1 {
   display: flex;
   flex-direction: column;
@@ -395,18 +401,29 @@ nav {
 }
 
 .item-top{
-  background-color: #efeeff;
+  /* background-color: #efeeff; */
+  background-color: rgb(243 244 246);
   padding: 20px;
-  border-radius: 5px;
+  border-radius: 20px;
   text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-bottom: 20px;
+  transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.item-top:hover{
+  background-color: white;
+  box-shadow: 0 0 10px 3px white;
+}
+
+.item-top p{
+  color: #1f2937;
 }
 
 .logo{
-  border: 5px solid white;
+  /* border: 5px solid white; */
   width: 20px;
   height: 20px;
 }
